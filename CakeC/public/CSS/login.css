@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(221 194 234);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1330px;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+}
+.container .navbar-brand{
+    margin-left: 10px;
+}
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.navbar a {
+    list-style: none;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e8233e;
+    border-radius: 15px;
+}
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-header {
+    position: relative;
+    color: transparent;
+    margin-bottom: 30px;
+}
+.card-header::before {
+    content: "Welcome";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 80px;
+    color: WHITE;
+    background-color: #e8233e;
+    border-radius: 20px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.card-body .row label {
+    font-size: 20px;
+    display: block;
+    margin: 20px 0 5px;
+}
+.card-body .row input {
+    display: block;
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    caret-color: #e8233e;
+    margin-top: 15px;
+}
+.card-body .row input:focus {
+    outline: none;
+    border: 1px solid #eee;
+}
+.card-body .row button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    color: transparent;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+.card-body .row button::before {
+    content: "Submit";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 23px;
+    color: #e8233e;
+    transition: 0.5s;
+}
+.card-body .row button:hover:before {
+    color: white;
+}
+.card-body .row button:hover {
+    background-color: #e8233e;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+.card-body {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.btn-link {
+    text-decoration: none;
+    position: absolute;
+    bottom: -4%;
+    width: 100%;
+    right: -2%;
+    color: #e8233e;
+}
